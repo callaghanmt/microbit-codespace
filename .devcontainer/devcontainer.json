@@ -3,10 +3,7 @@
   "build": {
     "dockerfile": "Dockerfile"
   },
-  "postCreateCommand": "pip install --no-cache-dir uflash notebook ipykernel",
-  "settings": {
-    "terminal.integrated.defaultProfile.linux": "bash"
-  },
+  "postCreateCommand": "pip install jupyterlab notebook uflash ipykernel",
   "customizations": {
     "vscode": {
       "extensions": [
@@ -14,5 +11,8 @@
         "ms-toolsai.jupyter"
       ]
     }
+  },
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
   }
 }
